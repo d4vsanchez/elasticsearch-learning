@@ -1,0 +1,7 @@
+POST http://localhost:9200/users/_doc
+Content-Type: application/json
+
+{
+  "first_name": "Morty",
+  "last_name": "Smith"
+}

@@ -1,0 +1,7 @@
+PUT http://localhost:9200/users/_doc/1
+Content-Type: application/json
+
+{
+  "first_name": "Rick",
+  "last_name": "Sánchez"
+}
