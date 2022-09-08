@@ -1,0 +1,9 @@
+PUT http://localhost:9200/users/_mapping
+Content-Type: application/json
+
+{
+  "properties": {
+    "first_name": {"type": "text"},
+    "last_name": {"type": "text"}
+  }
+}

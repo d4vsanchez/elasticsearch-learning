@@ -1,0 +1,23 @@
+GET http://localhost:9200/users/_search
+Content-Type: application/json
+
+{
+  "query": {
+    "bool": {
+      "must_not": {
+        "match": {
+          "first_name": "Morty"
+        }
+      },
+      "should": [{
+        "match": {
+          "last_name": "Sánchez"
+        }
+      }, {
+        "match": {
+          "last_name": "Smith"
+        }
+      }]
+    }
+  }
+}

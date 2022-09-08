@@ -1,0 +1,11 @@
+GET http://localhost:9200/users/_search
+Content-Type: application/json
+
+{
+  "query": {
+    "simple_query_string": {
+      "query": "Sánchez",
+      "fields": ["last_name"]
+    }
+  }
+}
