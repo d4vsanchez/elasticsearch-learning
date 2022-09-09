@@ -1,7 +1,11 @@
-POST http://localhost:9200/users/_doc
+POST http://localhost:9200/aircrafts/_doc
 Content-Type: application/json
 
 {
-  "first_name": "Morty",
-  "last_name": "Smith"
+  "manufacturer": "Boeing",
+  "name": "Yananyi",
+  "model": "737",
+  "variant": "737-800",
+  "status": "ACTIVE",
+  "delivery_date": "2002-01-01"
 }

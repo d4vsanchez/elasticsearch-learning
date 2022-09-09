@@ -1,1 +1,1 @@
-GET http://localhost:9200/users/_search
+GET http://localhost:9200/aircrafts/_search

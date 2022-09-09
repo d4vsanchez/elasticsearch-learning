@@ -1,0 +1,8 @@
+{"create": {}}
+{"manufacturer": "Airbus", "name": "Nancy-Bird Walton", "model": "A380", "variant": "A380-800", "status": "PARKED", "delivery_date": "2008-09-01"}
+{"create": {}}
+{"manufacturer": "Airbus", "name": "Hudson Fysh", "model": "A380", "variant": "A380-800", "status": "ACTIVE", "delivery_date": "2008-12-01"}
+{"create": {}}
+{"manufacturer": "Airbus", "name": "Cradle Mountain", "model": "A330", "variant": "A330-200", "status": "ACTIVE", "delivery_date": "2014-08-01"}
+{"create": {}}
+{"manufacturer": "Boeing", "name": "Great Southern Land", "model": "787", "variant": "787-9", "status": "ACTIVE", "delivery_date": "2017-10-01"}

@@ -1,23 +1,16 @@
-GET http://localhost:9200/users/_search
+GET http://localhost:9200/aircrafts/_search
 Content-Type: application/json
 
 {
   "query": {
     "bool": {
+      "must": [
+        { "match": { "manufacturer": "Airbus" } },
+        { "term": { "status": "ACTIVE" } }
+      ],
       "must_not": {
-        "match": {
-          "first_name": "Morty"
-        }
-      },
-      "should": [{
-        "match": {
-          "last_name": "Sánchez"
-        }
-      }, {
-        "match": {
-          "last_name": "Smith"
-        }
-      }]
+        "range": { "delivery_date": { "gte": "2010-01-01" } }
+      }
     }
   }
 }

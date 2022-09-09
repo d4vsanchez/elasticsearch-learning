@@ -1,0 +1,15 @@
+PUT http://localhost:9200/aircrafts
+Content-Type: application/json
+
+{
+  "mappings": {
+    "properties": {
+      "manufacturer": { "type": "keyword" },
+      "name": { "type": "text" },
+      "model": { "type": "keyword" },
+      "variant": { "type": "keyword" },
+      "status": { "type": "keyword" },
+      "delivery_date": { "type": "date" }
+    }
+  }
+}

@@ -1,7 +1,11 @@
-PUT http://localhost:9200/users/_doc/1
+PUT http://localhost:9200/aircrafts/_doc/1
 Content-Type: application/json
 
 {
-  "first_name": "Rick",
-  "last_name": "Sánchez"
+  "manufacturer": "Boeing",
+  "name": "Broome",
+  "model": "737",
+  "variant": "737-800",
+  "status": "ACTIVE",
+  "delivery_date": "2002-01-01"
 }
