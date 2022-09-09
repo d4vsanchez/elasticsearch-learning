@@ -1,0 +1,30 @@
+GET http://localhost:9200/aircrafts/_search
+Content-Type: application/json
+
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "bool": {
+            "should": [
+              { "term": { "manufacturer": "Airbus" } },
+              { "term": { "manufacturer": "Boeing" } }
+            ]
+          }
+        },
+        {
+          "bool": {
+            "must": [
+              { "range": { "delivery_date": { "gte": "2005-01-01" } } },
+              { "range": { "delivery_date": { "lte": "2022-01-01" } } }
+            ]
+          }
+        },
+        {
+          "term": { "status": "PARKED" }
+        }
+      ]
+    }
+  }
+}
